@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/commitizen-tools/commitizen
-    rev: v4.1.1
+    rev: v4.2.1
     hooks:
     - id: commitizen
 
@@ -17,8 +17,10 @@ repos:
       - id: check-added-large-files
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.9.4
+    rev: v0.9.6
     hooks:
       - id: ruff
         args: [ --fix ]
+      - id: ruff
+        args: [ "check", "--select", "I", "--fix" ]
       - id: ruff-format

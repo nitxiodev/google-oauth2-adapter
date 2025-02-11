@@ -1,9 +1,9 @@
 import urllib.parse
-from typing import List, Any, Dict, Optional
+from typing import Any, Dict, List, Optional
 
 import requests
 
-from utils import generate_random_state, TokenStore
+from utils import TokenStore, generate_random_state
 
 
 class OAuth2Error(Exception):

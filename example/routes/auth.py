@@ -1,4 +1,4 @@
-from flask import Blueprint, request, Response, current_app, redirect, session
+from flask import Blueprint, Response, current_app, redirect, request, session
 
 from adapters.base import OAuth2Error
 from example.services.social import create_social_token

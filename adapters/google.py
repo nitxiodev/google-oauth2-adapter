@@ -1,5 +1,5 @@
 import enum
-from typing import Optional, Dict, Any
+from typing import Any, Dict, Optional
 
 from adapters.base import OAuth2Adapter
 
